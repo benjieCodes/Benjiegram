@@ -3,7 +3,7 @@ import { render } from "react-router";
 
 class PhotoGrid extends React.Component {
   render() {
-    return "Photogrid Homepage";
+    return <div className="photo-grid">I'm the photo grid</div>;
   }
 }
 

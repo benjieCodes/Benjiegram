@@ -3,7 +3,7 @@ import { render } from "react-router";
 
 class SinglePage extends React.Component {
   render() {
-    return "Single page";
+    return <div className="single-photo">I'm the single page</div>;
   }
 }
 
