@@ -9,3 +9,5 @@ const rootReducer = combineReducers({
   comments,
   routing: routerReducer
 });
+
+export default rootReducer;
