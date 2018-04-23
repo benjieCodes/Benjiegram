@@ -3,7 +3,11 @@ import { render } from "react-router";
 
 class PhotoGrid extends React.Component {
   render() {
-    return <div className="photo-grid">I'm the photo grid</div>;
+    return (
+      <div className="photo-grid">
+        {JSON.stringify(this.props.posts, null, "")}
+      </div>
+    );
   }
 }
 
