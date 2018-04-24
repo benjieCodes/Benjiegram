@@ -10,11 +10,12 @@ class SinglePage extends React.Component {
       post => post.code === this.props.params.postId
     );
     const post = this.props.posts[i];
+    const postComments = this.props.comments[this.props.params.postId] || [];
     // get post
     return (
       <div className="single-photo">
         <Photo i={i} post={post} {...this.props} />
-        <Comment />
+        <Comment postComments={postComments} />
       </div>
     );
   }
