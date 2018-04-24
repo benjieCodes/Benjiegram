@@ -15,7 +15,7 @@ class SinglePage extends React.Component {
     return (
       <div className="single-photo">
         <Photo i={i} post={post} {...this.props} />
-        <Comment postComments={postComments} />
+        <Comment postComments={postComments} {...this.props} />
       </div>
     );
   }
